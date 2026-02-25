@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(to right, #00adb5, #393e46);
+            color: white;
+            padding: 60px 20px;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 70%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* Sections */
+        section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        /* Skills */
+        .skill-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: #eeeeee;
+            padding: 15px 25px;
+            border-radius: 5px;
+        }
+
+        /* Projects */
+        .project-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .project-box {
+            background: #f4f4f4;
+            padding: 20px;
+            width: 300px;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Resume Button */
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #00adb5;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background: #222;
+        }
+
+        /* Contact */
+        .contact {
+            background: #eeeeee;
+        }
+
+        /* Footer */
+        footer {
+            background: #222;
+            color: white;
+            padding: 20px;
+        }
+
+        /* Responsive */
+        @media(max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <img src="WhatsApp Image 2026-02-16 at 8.26.57 AM.jpeg"
+                 alt="Profile Picture"
+                 class="profile-img">
+            <h1>Chanchal Sanjay Sable</h1>
+            <p>Frontend Developer | HTML | CSS | JavaScript</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate web developer with strong knowledge of HTML and CSS.
+            I enjoy building responsive and user-friendly websites.
+            I am constantly learning new technologies to improve my skills.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <h2>My Skills</h2>
+        <div class="skill-container">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">Responsive Design</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <h3>Laptop Landing Page</h3>
+                <p>Designed a modern product landing page using HTML and CSS.</p>
+            </div>
+
+            <div class="project-box">
+                <h3>Calculator</h3>
+                <p>Calculator with basic mathematical functionalities using HTML, CSS, and JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section class="resume">
+        <h2>Resume</h2>
+        <p>Click below to download my resume.</p>
+        <a href="#" class="btn">Download Resume</a>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <p>Email: chanchalsable13@gmail.com</p>
+        <p>Phone: 7620414519</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Chanchal Sanjay Sable. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
